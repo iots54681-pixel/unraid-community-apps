@@ -9,6 +9,10 @@
   <Project>https://myhades.app/</Project>
   <Overview>Hades is a self-hosted media management server and companion backend for Icarus. It centralizes supported media-service connections such as Sonarr, Radarr, and Seerr and provides a unified library for Icarus clients, including Apple TV. This is a community-maintained Unraid template; Hades itself is developed by the Pantheon/Icarus developers.</Overview>
   <Category>MediaApp:Other</Category>
+  <ExtraSearchTerms>Icarus Sonarr Radarr Seerr media manager Pantheon</ExtraSearchTerms>
+  <Requires>Network access to the media services you configure in Hades.</Requires>
+  <Changes>Initial Unraid Community Applications template release.</Changes>
+  <Date>2026-10-03</Date>
   <WebUI>http://[IP]:[PORT:8124]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/templates/hades.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.svg</Icon>
