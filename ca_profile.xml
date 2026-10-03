@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Maintainer>
-  <Name>iots54681-pixel</Name>
-  <Support>https://github.com/iots54681-pixel/unraid-community-apps/issues</Support>
-  <Repository>https://github.com/iots54681-pixel/unraid-community-apps</Repository>
-</Maintainer>
+<CommunityApplications>
+  <Profile>
+Community-maintained Unraid Community Applications templates maintained by iots54681-pixel.
+
+This repository currently provides an Unraid deployment template for Hades, the self-hosted companion server for Icarus. The Hades application and Docker image are developed and distributed by their respective developers; this repository maintains only the Unraid Community Applications template.
+  </Profile>
+
+  <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.svg</Icon>
+
+  <WebPage>https://github.com/iots54681-pixel/unraid-community-apps</WebPage>
+</CommunityApplications>
