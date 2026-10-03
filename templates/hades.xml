@@ -16,7 +16,7 @@
   <Date>2026-10-03</Date>
   <WebUI>http://[IP]:[PORT:8124]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/templates/hades.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
