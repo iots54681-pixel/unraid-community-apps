@@ -12,7 +12,7 @@
   <WebUI>http://[IP]:[PORT:8124]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/templates/hades.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.svg</Icon>
-  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled/>
