@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Hades</Name>
+  <Repository>docker.io/mypantheon/hades-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/mypantheon/hades-server</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/iots54681-pixel/unraid-community-apps/issues</Support>
+  <Project>https://myhades.app/</Project>
+  <Overview>Hades is a self-hosted media management server and companion backend for Icarus. It centralizes supported media-service connections such as Sonarr, Radarr, and Seerr and provides a unified library for Icarus clients, including Apple TV. This is a community-maintained Unraid template; Hades itself is developed by the Pantheon/Icarus developers.</Overview>
+  <Category>MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:8124]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/templates/hades.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/iots54681-pixel/unraid-community-apps/main/icon.svg</Icon>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+
+  <Config
+    Name="Hades Config"
+    Target="/config"
+    Default="/mnt/user/appdata/hades"
+    Mode="rw"
+    Description="Persistent Hades configuration, databases, integration credentials, and library data."
+    Type="Path"
+    Display="always"
+    Required="true"
+    Mask="false"/>
+
+  <Config
+    Name="Web/API Port"
+    Target="8124"
+    Default="8124"
+    Mode="tcp"
+    Description="Port used by the Hades web interface, API, and Icarus clients."
+    Type="Port"
+    Display="always"
+    Required="true"
+    Mask="false"/>
+
+  <Config
+    Name="Timezone"
+    Target="TZ"
+    Default="America/New_York"
+    Mode=""
+    Description="Timezone used by Hades. Change this to your local TZ database timezone if necessary."
+    Type="Variable"
+    Display="always"
+    Required="true"
+    Mask="false"/>
+
+  <Config
+    Name="Catalog Work Profile"
+    Target="HADES_CATALOG_WORK_PROFILE"
+    Default="balanced"
+    Mode=""
+    Description="Controls the Hades catalog worker profile. Balanced is the recommended general-purpose setting."
+    Type="Variable"
+    Display="advanced"
+    Required="false"
+    Mask="false"/>
+
+  <Config
+    Name="Local Recovery"
+    Target="HADES_LOCAL_RECOVERY_ENABLED"
+    Default="false"
+    Mode=""
+    Description="Controls the Hades local recovery feature. Disabled by default."
+    Type="Variable"
+    Display="advanced"
+    Required="false"
+    Mask="false"/>
+</Container>
