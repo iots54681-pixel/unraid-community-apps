@@ -1,32 +1,50 @@
-# Community Apps Starter Template
+# Unraid Community Apps Templates
 
-Use this repository as a GitHub template when you want a clean starting point for a new Community Apps submission repository.
+Community-maintained Unraid application templates by **iots54681-pixel**.
 
-## Quick Start
+## Hades
 
-1. Click **Use this template** on GitHub and create your own repository.
-2. Replace the placeholder values in `ca_profile.xml`, `templates/example-app.xml`, and `plugins/example-plugin.xml`.
-3. Replace `icon.svg` with your own repository icon, or update `ca_profile.xml` to point at a hosted icon you control.
-4. Keep one XML file per Docker app under `templates/`.
-5. Keep one XML wrapper per plugin under `plugins/`.
-6. Delete the example files you do not need.
-7. Commit and push your repository.
-8. Run **Validate** and **Scan** in the Community Apps submit flow: `/submit`.
+This repository provides an Unraid Community Applications template for Hades.
 
-## Starter Files
+Hades is a self-hosted media management server and companion backend for Icarus. It centralizes supported media-service connections and provides a unified library for Icarus clients.
 
-- `README.md`: onboarding notes for whoever maintains the repository.
-- `LICENSE`: starter MIT license text. Replace the placeholder copyright line.
-- `.gitignore`: keeps common OS junk out of the repo.
-- `icon.svg`: starter repository icon referenced by `ca_profile.xml`.
-- `ca_profile.xml`: repository overview and support metadata shown in Community Apps.
-- `templates/example-app.xml`: starter Docker application template.
-- `plugins/example-plugin.xml`: starter plugin wrapper.
+### Supported integrations
 
-## Submission Notes
+Hades supports media services including:
 
-- Keep `ca_profile.xml` in the repository root.
-- Every Docker app entry needs a `<Repository>` tag.
-- Every plugin entry needs a `<PluginURL>` tag.
-- Keep each template's `TemplateURL` pointed at the raw GitHub URL for that exact XML file.
-- Use an OSI-approved license before submitting.
+- Sonarr
+- Radarr
+- Seerr
+- Additional integrations supported by Hades
+
+### Docker image
+
+This template deploys the official Hades Docker image:
+
+`docker.io/mypantheon/hades-server:latest`
+
+### Persistent storage
+
+Hades stores its persistent configuration and databases at:
+
+`/config`
+
+The Unraid template maps this by default to:
+
+`/mnt/user/appdata/hades`
+
+### Web interface
+
+Hades uses TCP port `8124` by default.
+
+## Support
+
+For issues specifically related to this **Unraid template**, please use this repository's GitHub Issues page.
+
+For issues with Hades or Icarus themselves, please use the official Hades/Icarus support resources.
+
+## Disclaimer
+
+This is a community-maintained Unraid deployment template.
+
+Hades and Icarus are developed and distributed by their respective developers. This repository is not the official source repository for Hades or Icarus.
